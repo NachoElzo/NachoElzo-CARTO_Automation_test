@@ -1,0 +1,20 @@
+{
+  "name": "carto_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pw:run": "playwright test --headed",
+    "allure:run": "playwright test --headed  --reporter=allure-playwright",
+    "allure:gen": "allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.8.2",
+    "allure-playwright": "^2.9.2"
+  }
+}
